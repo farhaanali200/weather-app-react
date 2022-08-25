@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import Search from "./components/search/search";
 
 function App() {
+
+    const  handleOnSearchChange = (searchData) => {
+        console.log(searchData);
+    }
+
   return (
-    <div className="App">
-      <div>
-
-        <h1>Yeh main laptop se update kara</h1>
-
-      </div>
-    </div>
+   <div className="container">
+       <Search onSearchChange={handleOnSearchChange}/>
+   </div>
   );
 }
 
