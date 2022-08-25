@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Baby this is my new file</h1>
-          <h1>Changes kaiku nai aare</h1>
-          <h1>aare</h1>
+
+        <h1>updated</h1>
+
       </div>
     </div>
   );
