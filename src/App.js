@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div>
 
-        <h1>updated</h1>
+        <h1>Yeh main laptop se update kara</h1>
 
       </div>
     </div>
