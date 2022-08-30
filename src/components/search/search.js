@@ -3,7 +3,7 @@ import {useState} from "react";
 import {geoApiOptions} from "../api";
 import {GEO_API_URL} from "../api";
 
-const Search = (props) => {
+const Search = ({onSearchChange}) => {
 
    const [search,setSearch] =  useState(null);
 
@@ -26,15 +26,15 @@ const Search = (props) => {
 
    const handleOnChange = (searchData) => {
        console.log("Testing");
-       console.log(searchData);
+    //    console.log(searchData);
        setSearch(searchData);
-       props.onSearchChange(searchData);
+       onSearchChange(searchData);
 
    }
 
     return (
         //whenever I select something from the loadoptions dropdown menu, the onchange takes the loadoptions
-        // object, runs its handler and passes it to parent where console log is there to diaply it
+        // object, runs its handler and passes it to parent where console log is there to display it
         <AsyncPaginate
             placeholder="Search for city"
             debounceTimeout={600}
